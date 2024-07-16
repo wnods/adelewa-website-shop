@@ -573,6 +573,8 @@ background-color: #d6edfb;}
   }
     .blog-section .post-entry .post-thumbnail img {
       border-radius: 20px;
+      width: 500px;
+      height: 450px;
       -webkit-transition: .3s all ease;
       -o-transition: .3s all ease;
       transition: .3s all ease; }
@@ -766,4 +768,32 @@ textarea {
 .site-block-order-table td, .site-block-order-table th {
   color: #000000; }
 
-
+  .product-description {
+    padding: 20px;
+  }
+  .product-description h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .product-description p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  .product-description .btn {
+    font-size: 1rem;
+  }
+  .tns-nav {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .tns-nav button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 1rem;
+    color: #000;
+  }
+  .tns-nav button.tns-nav-active {
+    color: #007bff;
+  }
