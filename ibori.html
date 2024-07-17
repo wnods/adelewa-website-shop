@@ -5,194 +5,163 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="wnods">
   <link rel="shortcut icon" href="favicon.jpg">
-
   <meta name="description" content="" />
   <meta name="keywords" content="bootstrap, bootstrap4" />
 
-		<!-- Bootstrap CSS -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-		<link href="css/tiny-slider.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
-		<title>Adelewa Criações</title>
-	</head>
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="css/tiny-slider.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Adelewa Criações</title>
+</head>
 
-	<body>
+<body>
+  <!-- Começa a Header/Nav -->
+  <nav class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark" aria-label="adelewa navigation bar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Adelewa Criações<span>.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsadelewa" aria-controls="navbarsadelewa" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsadelewa">
+        <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Ínicio</a>
+          </li>
+          <li class="active"><a class="nav-link" href="produtos.html">Produtos</a></li>
+          <li><a class="nav-link" href="sobre-nos.html">Sobre Nós</a></li>
+          <li><a class="nav-link" href="serviços.html">Serviços</a></li>
+          <li><a class="nav-link" href="galeria.html">Galeria</a></li>
+          <li><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Fim da Header/Nav -->
 
-		<!-- Começa a Header/Nav -->
-		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="adelewa navigation bar">
+  <!-- Começa Sub-nav Section -->
+  <div class="hero">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-5">
+          <div class="intro-excerpt">
+            <h1>Ìbori</h1>
+            <p>O Ìbori</p>
+            <p><a href="https://wa.me/message/NUD6EK57ZWTHN1" class="btn btn-secondary me-2">Encomende</a></p>
+          </div>
+        </div>
+        <div class="col-lg-7"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Fim da Sub-Nav Section -->
 
-			<div class="container">
-				<a class="navbar-brand" href="index.html">Adelewa Criações<span>.</span></a>
+  <!-- Secção do Produto -->
+  <div class="right-section">
+    <div class="carousel">
+      <div class="carousel-item active">
+        <img class="carousel-image" src="images/ibori/ibori5.jpg" alt="Image 1">
+      </div>
+      <div class="carousel-item">
+        <img class="carousel-image" src="images/ibori/ibori10.jpg" alt="Image 2">
+      </div>
+      <div class="carousel-item">
+        <img class="carousel-image" src="images/ibori/ibori4.jpg" alt="Image 3">
+      </div>
+      <div class="carousel-item">
+        <img class="carousel-image" src="images/ibori/ibori7.jpg" alt="Image 4">
+      </div>
+      <div class="carousel-item">
+        <img class="carousel-image" src="images/ibori/ibori2.jpg" alt="Image 5">
+      </div>
+      <div class="controls">
+        <button class="control-button" id="prev">&#10094;</button>
+        <button class="control-button" id="next">&#10095;</button>
+      </div>
+    </div>
+  </div>
+  <!-- Fim da Secção de Produto -->
 
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsadelewa" aria-controls="navbarsadelewa" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+  <!-- Rodapé -->
+  <footer class="footer-section">
+    <div class="container relative">
+      <div class="sofa-img">
+        <img src="images/ifá-without-bg.png" alt="Image" class="img-fluid">
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="subscription-form">
+            <h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg" alt="Image" class="img-fluid"></span><span>Inscreva-se para Notícias</span></h3>
+            <form action="#" class="row g-3">
+              <div class="col-auto">
+                <input type="text" class="form-control" placeholder="Seu nome">
+              </div>
+              <div class="col-auto">
+                <input type="email" class="form-control" placeholder="Seu e-mail">
+              </div>
+              <div class="col-auto">
+                <button class="btn btn-primary"><span class="fa fa-paper-plane"></span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row g-5 mb-5">
+        <div class="col-lg-4">
+          <div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Adelewa Criações co<span>.</span></a></div>
+          <p class="mb-4"></p>
+          <ul class="list-unstyled custom-social">
+            <li><a href="https://www.instagram.com/adelewacriacoes/"><span class="fa fa-brands fa-instagram"></span></a></li>
+            <li><a href="https://wa.me/message/NUD6EK57ZWTHN1"><span class="fa fa-brands fa-whatsapp"></span></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-8">
+          <div class="row links-wrap">
+            <div class="col-6 col-sm-6 col-md-3">
+              <ul class="list-unstyled">
+                <li><a href="sobre-nos.html">Sobre Nós</a></li>
+                <li><a href="serviços.html">Serviços</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contato.html">Contato</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3">
+              <ul class="list-unstyled">
+                <li><a href="contato.html">Suporte</a></li>
+                <li><a href="sobre-nos.html">Nossa Equipe</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3">
+              <ul class="list-unstyled">
+                <li><a href="#">Ifá</a></li>
+                <li><a href="#">Cerâmicas</a></li>
+                <li><a href="#">Ilekè</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-top copyright">
+        <div class="row pt-4">
+          <div class="col-lg-6">
+            <p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. Todos os Direitos Reservados &mdash; Feito por <a href="https://wnods.github.io/Portfolio/">Will Oliveira</a></p>
+          </div>
+          <div class="col-lg-6 text-center text-lg-end">
+            <ul class="list-unstyled d-inline-flex ms-auto">
+              <li class="me-4"><a href="#">Termos &amp; Condições</a></li>
+              <li><a href="#">Política de Privacidade</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Fim do Rodapé -->
 
-				<div class="collapse navbar-collapse" id="navbarsadelewa">
-					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-						<li class="nav-item ">
-							<a class="nav-link" href="index.html">Ínicio</a>
-						</li>
-						<li class="active"><a class="nav-link" href="produtos.html">Produtos</a></li>
-						<li><a class="nav-link" href="sobre-nos.html">Sobre Nós</a></li>
-						<li><a class="nav-link" href="serviços.html">Serviços</a></li>
-						<li><a class="nav-link" href="galeria.html">Galeria</a></li>
-						<li><a class="nav-link" href="contato.html">Contato</a></li>
-					</ul>
-				</div>
-			</div>
-				
-		</nav>
-		<!-- Fim da Header/Nav -->
-
-        <!-- Começa Sub-nav Section -->
-			<div class="hero">
-				<div class="container">
-					<div class="row justify-content-between">
-						<div class="col-lg-5">
-							<div class="intro-excerpt">
-								<h1>Ìbori</h1>
-                                <p>O Ìbori</p>
-                                <p><a href="https://wa.me/message/NUD6EK57ZWTHN1 " class="btn btn-secondary me-2">Encomende</a><a href="https://wa.me/message/NUD6EK57ZWTHN1 "</p>
-							</div>
-						</div>
-						<div class="col-lg-7">
-						</div>
-					</div>
-				</div>
-			</div>
-		<!-- Fim da Sub-Nav Section -->
-
-		 <!-- Secção do Produto -->
-		 <div class="container py-5">
-			<div class="row">
-			  <div class="col-md-6">
-				<!-- Slider de Imagens do Produto -->
-				<div class="my-slider">
-				  <div><img src="images/ibori/ibori5.jpg" class="img-fluid" alt="Produto 1 - Imagem 1"></div>
-				  <div><img src="images/ibori/ibori6.jpg" class="img-fluid" alt="Produto 1 - Imagem 2"></div>
-				  <div><img src="images/ibori/ibori7.jpg" class="img-fluid" alt="Produto 1 - Imagem 3"></div>
-				</div>
-			  </div>
-			  <div class="col-md-6">
-				<div class="product-description">
-				  <h1 class="mb-4">Produto 1</h1>
-				  <p class="mb-4">Descrição detalhada do Produto 1. Inclua informações sobre os materiais, tamanhos disponíveis, cores, etc.</p>
-				  <a href="https://wa.me/message/NUD6EK57ZWTHN1" class="btn btn-primary">Encomende</a>
-				</div>
-			  </div>
-			</div>
-		  </div>
-	
-		 <!-- Fim da Secção de Produto -->
-
-        <!-- Rodapé -->
-		<footer class="footer-section">
-			<div class="container relative">
-
-				<div class="sofa-img">
-					<img src="images/ifá-without-bg.png" alt="Image" class="img-fluid">
-				</div>
-
-				<div class="row">
-					<div class="col-lg-8">
-						<div class="subscription-form">
-							<h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg" alt="Image" class="img-fluid"></span><span>Inscreva-se para Notícias</span></h3>
-
-							<form action="#" class="row g-3">
-								<div class="col-auto">
-									<input type="text" class="form-control" placeholder="Seu nome">
-								</div>
-								<div class="col-auto">
-									<input type="email" class="form-control" placeholder="Seu e-mail">
-								</div>
-								<div class="col-auto">
-									<button class="btn btn-primary">
-										<span class="fa fa-paper-plane"></span>
-									</button>
-								</div>
-							</form>
-
-						</div>
-					</div>
-				</div>
-
-				<div class="row g-5 mb-5">
-					<div class="col-lg-4">
-						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Adelewa Criações co<span>.</span></a></div>
-						<p class="mb-4"></p>
-
-						<ul class="list-unstyled custom-social">
-							<li><a href="https://www.instagram.com/adelewacriacoes/"><span class="fa fa-brands fa-instagram"></span></a></li>
-							<li><a href="https://wa.me/message/NUD6EK57ZWTHN1"><span class="fa fa-brands fa-whatsapp"></span></a></li>
-						</ul>
-					</div>
-
-					<div class="col-lg-8">
-						<div class="row links-wrap">
-							<div class="col-6 col-sm-6 col-md-3">
-								<ul class="list-unstyled">
-									<li><a href="sobre-nos.html">Sobre Nós</a></li>
-									<li><a href="serviços.html">Serviços</a></li>
-									<li><a href="galeria.html">Galeria</a></li>
-									<li><a href="contato.html">Contato</a></li>
-								</ul>
-							</div>
-
-							<div class="col-6 col-sm-6 col-md-3">
-								<ul class="list-unstyled">
-									<li><a href="contato.html">Suporte</a></li>
-									<li><a href="sobre-nos.html">Nossa Equipe</a></li>
-									<li><a href="#">Política de Privacidade</a></li>
-								</ul>
-							</div>
-
-
-							<div class="col-6 col-sm-6 col-md-3">
-								<ul class="list-unstyled">
-									<li><a href="#">Ifá</a></li>
-									<li><a href="#">Cerâmicas</a></li>
-									<li><a href="#">Ilekè</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="border-top copyright">
-					<div class="row pt-4">
-						<div class="col-lg-6">
-							<p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. Todos os Direitos Reservados &mdash; Feito por <a href="https://wnods.github.io/Portfolio/">Will Oliveira</a>
-            </p>
-						</div>
-
-						<div class="col-lg-6 text-center text-lg-end">
-							<ul class="list-unstyled d-inline-flex ms-auto">
-								<li class="me-4"><a href="#">Termos &amp; Condições</a></li>
-								<li><a href="#">Politica de Privacidade</a></li>
-							</ul>
-						</div>
-
-					</div>
-				</div>
-
-			</div>
-		</footer>
-		<!-- Fim do Rodapé -->	
-
-
-		<script src="js/bootstrap.bundle.min.js"></script>
-		<script src="js/tiny-slider.js"></script>
-		<script src="js/custom.js"></script>
-	</body>
-
-</html>
-
-        <script src="js/bootstrap.bundle.min.js"></script>
-		<script src="js/tiny-slider.js"></script>
-		<script src="js/custom.js"></script>
-	</body>
-
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/custom.js"></script>
+</body>
 </html>
