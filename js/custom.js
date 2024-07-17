@@ -71,3 +71,26 @@
 
 
 })()
+
+const carousel = document.querySelector('.carousel');
+const carouselItems = carousel ? carousel.querySelectorAll('.carousel-item') : [];
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
+let currentItem = 0;
+const totalItems = carouselItems.length;
+
+if (carousel && carouselItems.length > 0 && prevButton && nextButton) {
+	prevButton.addEventListener('click', () => {
+		console.log('Prev button clicked');
+		carouselItems[currentItem].classList.remove('active');
+		currentItem = (currentItem - 1 + totalItems) % totalItems;
+		carouselItems[currentItem].classList.add('active');
+	});
+
+	nextButton.addEventListener('click', () => {
+		console.log('Next button clicked');
+		carouselItems[currentItem].classList.remove('active');
+		currentItem = (currentItem + 1) % totalItems;
+		carouselItems[currentItem].classList.add('active');
+	});
+}
