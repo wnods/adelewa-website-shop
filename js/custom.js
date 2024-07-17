@@ -72,25 +72,59 @@
 
 })()
 
-const carousel = document.querySelector('.carousel');
-const carouselItems = carousel ? carousel.querySelectorAll('.carousel-item') : [];
-const prevButton = document.getElementById('prev');
-const nextButton = document.getElementById('next');
-let currentItem = 0;
-const totalItems = carouselItems.length;
+document.addEventListener('DOMContentLoaded', () => {
+    const items = document.querySelectorAll('.carousel-item');
+    const galleryImages = document.querySelectorAll('.gallery-image');
+    const nextButton = document.getElementById('next');
+    const prevButton = document.getElementById('prev');
+    let currentItem = 0;
+    let autoPlayInterval;
 
-if (carousel && carouselItems.length > 0 && prevButton && nextButton) {
-	prevButton.addEventListener('click', () => {
-		console.log('Prev button clicked');
-		carouselItems[currentItem].classList.remove('active');
-		currentItem = (currentItem - 1 + totalItems) % totalItems;
-		carouselItems[currentItem].classList.add('active');
-	});
+    function showItem(index) {
+        items.forEach((item, i) => {
+            item.classList.toggle('active', i === index);
+            galleryImages[i].classList.toggle('active', i === index);
+        });
+    }
 
-	nextButton.addEventListener('click', () => {
-		console.log('Next button clicked');
-		carouselItems[currentItem].classList.remove('active');
-		currentItem = (currentItem + 1) % totalItems;
-		carouselItems[currentItem].classList.add('active');
-	});
-}
+    function nextItem() {
+        currentItem = (currentItem + 1) % items.length;
+        showItem(currentItem);
+    }
+
+    function prevItem() {
+        currentItem = (currentItem - 1 + items.length) % items.length;
+        showItem(currentItem);
+    }
+
+    nextButton.addEventListener('click', () => {
+        nextItem();
+        resetAutoPlay();
+    });
+
+    prevButton.addEventListener('click', () => {
+        prevItem();
+        resetAutoPlay();
+    });
+
+    galleryImages.forEach((img, index) => {
+        img.addEventListener('click', () => {
+            currentItem = index;
+            showItem(currentItem);
+            resetAutoPlay();
+        });
+    });
+
+    function startAutoPlay() {
+        autoPlayInterval = setInterval(nextItem, 3000);
+    }
+
+    function resetAutoPlay() {
+        clearInterval(autoPlayInterval);
+        startAutoPlay();
+    }
+
+    // Initialize the first image as active
+    showItem(currentItem);
+    startAutoPlay();
+});
