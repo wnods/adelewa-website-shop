@@ -399,41 +399,7 @@ a {
             font-size: 1rem;
             margin-bottom: 1.5rem;
         }
-        .selection {
-            margin-bottom: 1.5rem;}
-        .selection label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-        }
-        .selection select {
-            width: 100%;
-            padding: 0.5rem;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-         .quantity-selector {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1.5rem;}
-        
-        .quantity-button {
-            background-color: #ddd;
-            border: none;
-            padding: 0.5rem;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-        
-        #quantity {
-            width: 3rem;
-            text-align: center;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin: 0 0.5rem;
-        }
-        
-        .add-to-cart {
+           .add-to-cart {
             background-color: #28a745;
             color: white;
             border: none;
@@ -445,7 +411,8 @@ a {
         }
           .add-to-cart:hover {
             background-color: #218838;}
-            .containerProduct {
+
+          .containerProduct {
           display: flex;
           justify-content: center;
           align-items: start;
@@ -470,23 +437,44 @@ a {
        .gallery-image:hover, .gallery-image.active {
           border: 2px solid #007bff;}
           @media (max-width: 1200px) {
+            .left-section {
+              display: flex;
+              flex-direction: row;
+            }
+            .gallery{
+              display: flex ;
+              flex-direction: row; 
+              transform: translateY(500px) translateX(-5px);
+            }
+
+            .gallery-image{
+              max-width: 4em;
+              max-height: 4em;
+            }
             .containerProduct {
                 flex-direction: column;
                 align-items: center;
             }
             .carousel {
-                width: 400px;
-                height: 450px;
-                transform: translateX(-50px) translateY(0);
+                width: 20rem;
+                height: 30rem;
+                display: flex;
+                transform: translateY(-210px) translateX(1000px);
             }
             .carousel-image {
-                width: 400px;
+                width: 100%;
             }
             .product-description {
                 width: 90%;
-                transform: translateY(0) translateX(0);
                 margin-top: 2rem;
+                transform: translateY(-250px) translateX(15px);
             }
+            .add-to-cart {
+              display: flex;
+              margin: -20px;
+              margin-left: 60px;
+              transform: translateY(-22px);
+          }
         }
         
 .PQN-section {
