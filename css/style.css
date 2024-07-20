@@ -536,7 +536,7 @@ a {
   .encomenda-section .imgs-grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[27];
+    -ms-grid-columns: repeat(27, 1fr);
     grid-template-columns: repeat(27, 1fr);
     position: relative; }
     .encomenda-section .imgs-grid:before {
