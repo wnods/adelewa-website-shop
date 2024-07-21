@@ -459,7 +459,7 @@ a {
                 width: 20rem;
                 height: 30rem;
                 display: flex;
-                transform: translateY(-210px) translateX(1180px);
+                transform: translateY(-210px) translateX(1280px);
             }
             .carousel-image {
                 width: 100%;
