@@ -23,9 +23,6 @@
 	};
 	tinyslider();
 
-	
-
-
 	var sitePlusMinus = function() {
 
 		var value,
@@ -124,7 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
         startAutoPlay();
     }
 
-    // Initialize the first image as active
     showItem(currentItem);
     startAutoPlay();
 });
@@ -143,19 +139,3 @@ document.addEventListener('DOMContentLoaded', () => {
       delay: 2000,
     },
   });
-  
-  document.addEventListener('DOMContentLoaded', function() {
-    var waveDivider = document.querySelector('.wave-divider');
-    var observer = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-            if (entry.isIntersecting) {
-                waveDivider.style.transition = 'transform 1s ease-in-out';
-                waveDivider.style.transform = 'rotateY(0deg)';
-            }
-        });
-    });
-
-    observer.observe(waveDivider);
-});
-
-  
