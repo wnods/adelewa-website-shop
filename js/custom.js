@@ -144,5 +144,18 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
   
+  document.addEventListener('DOMContentLoaded', function() {
+    var waveDivider = document.querySelector('.wave-divider');
+    var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                waveDivider.style.transition = 'transform 1s ease-in-out';
+                waveDivider.style.transform = 'rotateY(0deg)';
+            }
+        });
+    });
+
+    observer.observe(waveDivider);
+});
 
   
