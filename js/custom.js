@@ -128,3 +128,34 @@ document.addEventListener('DOMContentLoaded', () => {
     showItem(currentItem);
     startAutoPlay();
 });
+
+  const swiper = new Swiper('.swiper-container', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+      delay: 2000,
+    },
+  });
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var waveDivider = document.querySelector('.wave-divider');
+    var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                waveDivider.style.transition = 'transform 1s ease-in-out';
+                waveDivider.style.transform = 'rotateY(0deg)';
+            }
+        });
+    });
+
+    observer.observe(waveDivider);
+});
+
+  
