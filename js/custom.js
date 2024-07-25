@@ -144,9 +144,5 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
   
-    
-
-    observer.observe(waveDivider);
-});
 
   
