@@ -112,7 +112,7 @@ a {
         .hero h1 {
           font-weight: 700;
           color: #ffffff;
-          margin-bottom: 30px;
+          margin-bottom: 50px;
           transition: font-size 0.3s ease; }
           @media (min-width: 1400px) {
             .hero h1 {
