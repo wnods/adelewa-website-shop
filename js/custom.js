@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function startAutoPlay() {
-        autoPlayInterval = setInterval(nextItem, 8000);
+        autoPlayInterval = setInterval(nextItem, 15000);
     }
 
     function resetAutoPlay() {
