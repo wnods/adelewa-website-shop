@@ -315,8 +315,9 @@ a {
         color: #0a0909;
         text-shadow: 2em black;
         text-decoration: none; }
+
       .product-section .product-item .icon-cross {
-      position: absolute;
+        position: absolute;
         width: 35px;
         height: 35px;
         display: inline-block;
@@ -326,13 +327,14 @@ a {
         -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         transform: translateX(-50%);
-        margin-bottom: -17.5px;
+        margin-bottom: -30px;
         border-radius: 50%;
         opacity: 0;
         visibility: hidden;
         -webkit-transition: .3s all ease;
         -o-transition: .3s all ease;
         transition: .3s all ease; }
+
         .product-section .product-item .icon-cross img {
           position: absolute;
           left: 50%;
@@ -340,6 +342,7 @@ a {
           -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
+
       .product-section .product-item:before {
         bottom: 0;
         left: 0;
