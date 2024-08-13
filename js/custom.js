@@ -139,3 +139,87 @@ document.addEventListener('DOMContentLoaded', () => {
       delay: 1000,
     },
   });
+
+
+gsap.from(".section-title", { 
+    duration: 1, 
+    y: -50, 
+    opacity: 0, 
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger: ".section-title", 
+        start: "top 80%", 
+    }
+});
+
+
+gsap.from(".PQN-section p", { 
+    duration: 1, 
+    y: 20, 
+    opacity: 0, 
+    stagger: 0.2, 
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger: ".PQN-section p",
+        start: "top 80%",
+    }
+});
+
+
+gsap.from(".feature", { 
+    duration: 1, 
+    x: 100, 
+    opacity: 0, 
+    stagger: 0.9, 
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger: ".feature",
+        start: "top 80%",
+    }
+});
+
+gsap.from(".img-wrap img", { 
+    duration: 1.5, 
+    scale: 0.8, 
+    opacity: 0, 
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger: ".img-wrap img",
+        start: "top 80%",
+    }
+});
+
+gsap.from(".imgs-grid .grid img", { 
+    duration: 1, 
+    scale: 0.8, 
+    opacity: 0, 
+    stagger: 0.9, 
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger: ".imgs-grid", 
+        start: "top 80%", 
+    }
+});
+
+
+gsap.from(".encomenda-section p", { 
+    duration: 1, 
+    y: 20, 
+    opacity: 0, 
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger: ".encomenda-section p",
+        start: "top 80%",
+    }
+});
+
+gsap.from(".encomenda-section .btn", { 
+    duration: 1, 
+    scale: 0.5, 
+    opacity: 0, 
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger: ".encomenda-section .btn",
+        start: "top 80%",
+    }
+});
