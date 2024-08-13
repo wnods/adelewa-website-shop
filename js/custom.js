@@ -265,3 +265,4 @@ gsap.utils.toArray('.post-entry').forEach((post, index) => {
         },
     });
 });
+
