@@ -288,15 +288,18 @@ a {
 .product-section {
     padding: 7rem 0em; 
     background-color: #7d5d51;}
+
     .product-section .product-item {
       text-align: center;
       text-decoration: none;
+      margin: 10px;
       display: block;
       position: relative;
       padding-bottom: 10px;
       cursor: pointer;}
       .product-section .product-item .product-thumbnail {
         margin-bottom: 30px;
+        margin: 10px;
         border-radius: 20px;
         width: 260px;
         height: 290px;
@@ -311,6 +314,8 @@ a {
       .product-section .product-item strong {
         font-weight: 800 !important;
         font-size: 18px !important; }
+        .product-section h2{
+          margin: 10px }
       .product-section .product-item h3, .product-section .product-item strong {
         color: #0a0909;
         text-shadow: 2em black;
