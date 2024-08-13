@@ -126,7 +126,7 @@ a {
         .hero .hero-img-wrap {
           position: relative;
           transition: all 0.3s ease; 
-           margin-left: 400px;}
+           margin-left: 0px;}
           .hero .hero-img-wrap img {
             position: relative;
             top: 0px;
@@ -208,9 +208,9 @@ a {
                   position: relative;
                   top: 0px;
                   right: 0px;
-                  z-index: 2;
+                  z-index: 1;
                   max-width: 780px;
-                  left: -20px;
+                  left: -15px;
                   transition: all 0.3s ease; }
                   @media (min-width: 768px) {
                     .hero2 .hero2-img-wrap img {
@@ -242,7 +242,82 @@ a {
                 @media (min-width: 1200px) {
                   .hero2 .hero2-img-wrap:after {
                     top: -40px; } }
-        
+
+                    .hero2 {
+                      background: #7d5d51 !important;
+                      padding: calc(4rem - 30px) 0 0rem 0;
+                      transition: padding 0.3s ease; }
+                      @media (min-width: 768px) {
+                        .hero2 {
+                          padding: calc(4rem - 30px) 0 4rem 0; } }
+                      @media (min-width: 992px) {
+                        .hero2 {
+                          padding: calc(8rem - 30px) 0 8rem 0; } }
+                    
+                    .hero2 .intro-excerpt {
+                      position: relative;
+                      z-index: 4;
+                      transition: max-width 0.3s ease; }
+                      @media (min-width: 992px) {
+                        .hero2 .intro-excerpt {
+                          max-width: 450px; } }
+                    
+                    .hero2 h1 {
+                      font-weight: 700;
+                      color: #ffffff;
+                      margin-bottom: 30px;
+                      transition: font-size 0.3s ease; }
+                      @media (min-width: 1400px) {
+                        .hero2 h1 {
+                          font-size: 54px; } }
+                    
+                    .hero2 p {
+                      color: rgba(250, 244, 244, 0.832);
+                      margin-bottom: 50px;
+                      transition: margin-bottom 0.3s ease; }
+                    
+                    .hero2 .hero2-img-wrap {
+                      position: relative;
+                      transition: all 0.3s ease; 
+                       margin-left: 400px;}
+                      .hero2 .hero2-img-wrap img {
+                        position: relative;
+                        top: 0px;
+                        right: 0px;
+                        z-index: 1;
+                        max-width: 780px;
+                        left: -15px;
+                        transition: all 0.3s ease; }
+                        @media (min-width: 768px) {
+                          .hero2 .hero2-img-wrap img {
+                            right: 0px;
+                            left: -100px; } }
+                        @media (min-width: 992px) {
+                          .hero2 .hero2-img-wrap img {
+                            left: 0px;
+                            top: -80px;
+                            position: absolute;
+                            right: -50px; } }
+                        @media (min-width: 1200px) {
+                          .hero2 .hero2-img-wrap img {
+                            left: 0px;
+                            top: -80px;
+                            right: -100px; } }
+                    
+                    .hero2 .hero2-img-wrap:after {
+                      content: "";
+                      position: absolute;
+                      width: 255px;
+                      height: 217px;
+                      background-image: url("../images/dots-light.svg");
+                      background-size: contain;
+                      background-repeat: no-repeat;
+                      right: -120px;
+                      top: -0px;
+                      transition: top 0.3s ease, right 0.3s ease; }
+                      @media (min-width: 1200px) {
+                        .hero2 .hero2-img-wrap:after {
+                          top: -40px; } }                         
 
 .btn {
   font-weight: 600;

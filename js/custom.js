@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
       prevEl: '.swiper-button-prev',
     },
     autoplay: {
-      delay: 1000,
+      delay: 2100,
     },
   });
 
@@ -266,3 +266,26 @@ gsap.utils.toArray('.post-entry').forEach((post, index) => {
     });
 });
 
+
+gsap.from('.intro-excerpt h1', {
+    duration: 1,
+    opacity: 0,
+    y: -50,
+    ease: 'power2.out',
+});
+
+gsap.from('.intro-excerpt p', {
+    duration: 1,
+    opacity: 0,
+    y: 20,
+    delay: 0.5,
+    ease: 'power2.out',
+});
+
+gsap.from('.hero-img-wrap img', {
+    duration: 1,
+    opacity: 1,
+    x: 100,
+    ease: 'power2.out',
+    delay: 0.5,
+});
