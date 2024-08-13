@@ -223,3 +223,45 @@ gsap.from(".encomenda-section .btn", {
         start: "top 80%",
     }
 });
+
+
+gsap.utils.toArray('.post-entry').forEach((post, index) => {
+    gsap.from(post, {
+        duration: 1,
+        opacity: 0,
+        y: 50,
+        ease: 'power3.out',
+        scrollTrigger: {
+            trigger: post,
+            start: 'top 80%',
+            end: 'bottom 60%',
+            toggleActions: 'play none none reverse',
+        },
+    });
+
+    gsap.from(post.querySelector('.post-thumbnail'), {
+        duration: 1,
+        scale: 0.9,
+        opacity: 0,
+        ease: 'power3.out',
+        scrollTrigger: {
+            trigger: post,
+            start: 'top 80%',
+            end: 'bottom 60%',
+            toggleActions: 'play none none reverse',
+        },
+    });
+
+    gsap.from(post.querySelector('.post-content-entry'), {
+        duration: 0.8,
+        opacity: 0,
+        y: 30,
+        ease: 'power3.out',
+        scrollTrigger: {
+            trigger: post,
+            start: 'top 80%',
+            end: 'bottom 60%',
+            toggleActions: 'play none none reverse',
+        },
+    });
+});
