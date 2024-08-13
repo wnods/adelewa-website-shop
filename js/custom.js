@@ -193,7 +193,7 @@ gsap.from(".imgs-grid .grid img", {
     duration: 1, 
     scale: 0.8, 
     opacity: 0, 
-    stagger: 0.9, 
+    stagger: 0.5, 
     ease: "power3.out",
     scrollTrigger: {
         trigger: ".imgs-grid", 
@@ -241,7 +241,7 @@ gsap.utils.toArray('.post-entry').forEach((post, index) => {
 
     gsap.from(post.querySelector('.post-thumbnail'), {
         duration: 1,
-        scale: 0.9,
+        scale: 0.5,
         opacity: 0,
         ease: 'power3.out',
         scrollTrigger: {
